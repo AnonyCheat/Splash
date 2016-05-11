@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NewsFeed"
+            android:name=".ChatScreen"
             android:label="@string/title_activity_news_feed"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

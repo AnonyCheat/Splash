@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class NewsFeed extends AppCompatActivity {
+public class ChatScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +55,7 @@ public class NewsFeed extends AppCompatActivity {
         userDisplayFragmet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(NewsFeed.this, ProfileActivity.class);
+                Intent intent = new Intent(ChatScreen.this, ProfileActivity.class);
                 startActivity(intent);
             }
         });
@@ -72,7 +72,7 @@ public class NewsFeed extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_settings) {
-            GlobalFunctions.launchSettings(NewsFeed.this);
+            GlobalFunctions.launchSettings(ChatScreen.this);
             return true;
         }
 

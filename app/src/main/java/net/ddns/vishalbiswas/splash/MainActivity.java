@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case 0:
-                    Intent intent = new Intent(MainActivity.this, NewsFeed.class);
+                    Intent intent = new Intent(MainActivity.this, ChatScreen.class);
                     startActivity(intent);
                     if (sharedPreferences.getBoolean("remember", false)) {
                         SharedPreferences.Editor editor = sharedPreferences.edit();
